@@ -3,6 +3,7 @@ const pokemonNumber = document.querySelector(".pokemon__number");
 const pokemon__image = document.querySelector(".pokemon__image");
 const buttonPrev = document.querySelector(".btn-prev");
 const buttonNext = document.querySelector(".btn-next");
+const buttonRandom = document.querySelector(".btn-random");
 
 let searchPokemon = 1;
 
@@ -56,6 +57,11 @@ buttonPrev.addEventListener("click", () => {
 });
 buttonNext.addEventListener("click", () => {
   searchPokemon += 1;
+  renderPokemon(searchPokemon);
+});
+
+buttonRandom.addEventListener("click", () => {
+  searchPokemon = Math.floor(Math.random() * 649) + 1;
   renderPokemon(searchPokemon);
 });
 

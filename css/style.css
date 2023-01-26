@@ -84,6 +84,11 @@ main {
   box-shadow: -3px 4px rgb(124, 130, 130), -5px 7px 0 rgb(78, 23, 36);
 }
 
+.btn-random {
+  margin-top: 20px;
+  width: 100%;
+}
+
 .button:active {
   box-shadow: inset -4px 4px 0 #222;
 }
